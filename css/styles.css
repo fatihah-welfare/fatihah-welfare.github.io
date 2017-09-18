@@ -1,0 +1,251 @@
+body {
+margin: 0;
+padding: 0;
+font-family: helvetica;
+}
+
+h1, h2, h3, p {
+  margin:0;
+  padding:0;
+}
+
+h2 {
+  padding-bottom: 13px;
+}
+
+header {
+  padding-top: 20px;
+  height: 90px;
+  /*background-color: grey;*/
+  /*padding-left: 70px;
+  padding-right: 70px;*/
+  margin: 0 auto;
+  border-bottom: 5px solid #ffdead;
+
+}
+
+nav {
+  float:right;
+  margin: 0 auto;
+  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  /*border: 7px solid blue;*/
+}
+
+  nav a{
+    text-decoration: none;
+    color: #9b9b9b;
+    margin-right: 18px;
+  }
+
+.logo-art {
+  padding-right: 8px;
+}
+
+.logo-text {
+  padding-top: 20px;
+  font-weight: lighter;
+}
+
+.logo {
+  float: left;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: row;
+
+  /*border: 5px solid red;*/
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 1500px;
+}
+
+.wrapper2 {
+  width: 90%;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+
+.top {
+  height: 370px;
+  /*background-color: coral;*/
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  /*border: 7px solid red;*/
+}
+
+ .event-notice {
+  background-image: url(/Users/Nouhou/Desktop/islam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px;
+  background-color: rgba(0,0,0,.7);
+  background-blend-mode: multiply;
+  width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+  .event-notice h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    color: #faebd7;
+  }
+
+  .event-name {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+ .prayer-times {
+  /*background-color: pink;*/
+  margin-left: 20px;
+ }
+
+ main {
+   height: 550px;
+   padding: 70px;
+   background-color: #ffd494;
+   color: #4a4a4a;
+   font-weight: lighter;
+   margin-top: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+
+.service > img{
+  padding-bottom: 10px;
+}
+
+.service p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ .services-wrap {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: space-around;
+   padding-top: 70px;
+   padding-bottom: 70px;
+   /*border: 7px solid red;*/
+ }
+
+ .project-more {
+   text-align: center;
+   color: #4a4a4a;
+   font-weight: 200;
+   font-size: 14px;
+   display: block;
+   padding-top: 20px;
+ }
+
+ .donate-btn {
+   margin: 0 auto;
+   background-color: #17a589;
+   color: white;
+   font-weight: 400;
+   display: block;
+   border-radius: 3px;
+   border: none;
+   padding: 15px 32px;
+   font-size: 17px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+
+ .donate-btn-nav {
+   padding: 5px 7px 5px 7px;
+   background-color: #17a589;
+   color: white;
+   font-weight: 400;
+   display: block;
+   border-radius: 3px;
+   border: none;
+   /*padding: 0px 15px;*/
+   font-size: 17px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+
+ .svg {
+   height: 180px;
+ }
+
+ .updates {
+   height: 90px;
+   background-color: #589ea0;
+   color: white;
+   padding: 70px;
+   margin: 20px 0 20px 0;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+.contact {
+  background-color: #2f4f4f;
+  height: 170px;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 85px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-btn {
+  padding-top: 6px;
+}
+
+/* Donations */
+.donate-info {
+   height: 100px;
+   padding: 35px;
+ }
+
+.donate-info p:first-child {
+    margin-bottom: 7px;
+  }
+
+.donate-info p:last-child {
+   background-color: white;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+   padding: 10px;
+   color: #4a4a4a;
+   margin-top: 7px;
+ }
+
+.pay-methods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 17px;
+}
+
+.paypal {
+  padding: 20px;
+  margin-right: 20px;
+  background-color: white;
+  height: 250px;
+  width: 50%;
+  color: #4a4a4a;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.bank-transfers {
+  padding: 20px;
+  background-color: #4a4a4a;
+  height: 250px;
+  width: 50%;
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+}
