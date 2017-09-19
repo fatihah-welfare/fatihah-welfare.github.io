@@ -117,6 +117,7 @@ nav {
    background-color: #ffd494;
    color: #4a4a4a;
    font-weight: lighter;
+   font-size: 30px;
    margin-top: 20px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
