@@ -215,9 +215,31 @@ nav {
    overflow: hidden;
  }
 
+@media only screen and (max-width: 550px) {
+  main {
+    padding: 30px;
+  }
+
+  main p{
+    font-size: 15px;
+  }
+
+  .service > img{
+    height: 90px;
+  }
+
+}
+
+
+
+
+.service {
+  padding-bottom: 40px;
+}
 
 .service > img{
   padding-bottom: 10px;
+
 }
 
 .service p{
@@ -231,8 +253,19 @@ nav {
    text-align: center;
    justify-content: space-around;
    padding-top: 70px;
-   padding-bottom: 70px;
+   padding-bottom: 70px;*/
    /*border: 7px solid red;*/
+ }
+
+
+
+ @media only screen and (max-width: 850px) {
+   .services-wrap {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+   }
  }
 
  .project-more {
@@ -256,6 +289,7 @@ nav {
    font-size: 17px;
    font-weight: bold;
    cursor: pointer;
+
  }
 
  .donate-btn-nav {
