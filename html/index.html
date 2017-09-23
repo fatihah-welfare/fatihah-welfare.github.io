@@ -5,15 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fatihah Welfare Community</title>
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script src="https://use.fontawesome.com/f0aeece087.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
   <header>
     <a href="/html/index.html" class="logo">
-      <image src="../assets/images/islamic-art.svg" class="logo-art" alt="logo-art" height="70"></image>
+      <image src="../assets/images/islamic-art.svg" class="logo-art" alt="logo-art"></image>
       <span class="logo-text">Fatihah Welfare Community</span></a>
+
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
+        </a>
+      </span>
+
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Our Project</a>
+        <a href="#">Media</a>
+        <a href="#">Events</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+
       <nav>
+
           <a href="donate.html">
             <button class="donate-btn-nav">
               Donate
@@ -35,7 +53,7 @@
 
     <h2>Next upcoming event:</h2>
     <p class="event-name" style="color: white;"> Eid-Ul-Fitr</p>
-    <p></p>
+    <!-- Details of event here <p></p> -->
   </section>
 
 
@@ -96,7 +114,18 @@
   </section>
 </div>
 
+<script>
+  function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '250px';
 
+  }
+
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+
+  }
+
+</script>
 <script src="/Users/Nouhou/Documents/work./projects./fatihah-welfare.github.io/js/script.js"></script>
 </body>
 </html>

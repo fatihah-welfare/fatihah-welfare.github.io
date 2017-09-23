@@ -2,6 +2,8 @@ body {
 margin: 0;
 padding: 0;
 font-family: helvetica;
+background-color: #055a5b;
+/*167c80, 2c3979*/
 }
 
 h1, h2, h3, p {
@@ -21,7 +23,7 @@ header {
   padding-right: 70px;*/
   margin: 0 auto;
   border-bottom: 5px solid #ffdead;
-
+  overflow: hidden;
 }
 
 nav {
@@ -30,17 +32,36 @@ nav {
   padding-top: 22px;
   display: flex;
   flex-direction: row;
+
   /*border: 7px solid blue;*/
+}
+
+@media (max-width: 1097px) {
+  nav {display: none;}
 }
 
   nav a{
     text-decoration: none;
-    color: #9b9b9b;
+    color: white;
     margin-right: 18px;
   }
 
+
+.logo {
+  float: left;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  /*border: 5px solid red;*/
+}
+
 .logo-art {
   padding-right: 8px;
+  height: 70px;
+  color: white;
 }
 
 .logo-text {
@@ -48,16 +69,25 @@ nav {
   font-weight: lighter;
 }
 
-.logo {
-  float: left;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-  color: #4a4a4a;
-  display: flex;
-  flex-direction: row;
+@media (max-width: 568px) {
+  .logo {
+    font-size: 18px;
+  }
 
-  /*border: 5px solid red;*/
+  .logo-art {
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    font-size: 14px;
+  }
+
+  .logo-art {
+    height: 37px;
+  }
+
 }
 
 .wrapper {
@@ -74,45 +104,107 @@ nav {
 
 
 .top {
-  height: 370px;
+  min-height: 365px;
   /*background-color: coral;*/
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 20px 0 20px 0;
   /*border: 7px solid red;*/
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .top {
+        display: flex;
+        flex-direction: row;
+
+
+    }
 }
 
  .event-notice {
-  background-image: url(/assets/images/islam.jpg);
+  background-image: url(/Users/Nouhou/Documents/work./projects./fatihah-welfare.github.io/assets/images/islam.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px;
   background-color: rgba(0,0,0,.7);
   background-blend-mode: multiply;
-  width: 900px;
+  width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
  }
 
-  .event-notice h2 {
-    font-size: 60px;
-    font-weight: bolder;
-    color: #faebd7;
-  }
+ .event-notice h2 {
+   font-size: 60px;
+   font-weight: bolder;
+   color: #faebd7;
+ }
 
-  .event-name {
-    color: white;
-    font-size: 60px;
-    font-weight: bolder;
-  }
+ .event-name {
+   color: white;
+   font-size: 60px;
+   font-weight: bolder;
+ }
 
  .prayer-times {
   /*background-color: pink;*/
   margin-left: 20px;
  }
 
+ @media only screen and (max-width: 881px) {
+     .event-notice {
+
+     }
+
+     .event-notice h2 {
+        font-size: 40px;
+
+     }
+
+     .event-name {
+       color: white;
+       font-size: 40px;
+       font-weight: bolder;
+     }
+
+ }
+
+  @media only screen and (max-width: 600px) {
+    .event-notice {
+      padding: 10px;
+      width: 0 auto;
+      margin-right: 10px;
+      padding-top: 100px;
+
+    }
+
+    .event-notice h2 {
+       font-size: 16px;
+       font-weight: bold;
+
+
+    }
+
+    .event-name {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .prayer-times {
+     /*background-color: pink;*/
+     margin-left: 0;
+    }
+
+  }
+
+
+
+
  main {
-   height: 550px;
+   min-height: 550px;
    padding: 70px;
    background-color: #ffd494;
    color: #4a4a4a;
@@ -120,6 +212,7 @@ nav {
    font-size: 20px;
    margin-top: 20px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   overflow: hidden;
  }
 
 
@@ -184,23 +277,25 @@ nav {
  }
 
  .updates {
-   height: 90px;
+   min-height: 90px;
    background-color: #589ea0;
    color: white;
    padding: 70px;
    margin: 20px 0 20px 0;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   overflow: hidden;
  }
 
 .contact {
   background-color: #2f4f4f;
-  height: 170px;
+  min-height: 170px;
   color: white;
   text-align: center;
   font-weight: lighter;
   padding-top: 85px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
 }
 
 .nav-btn {
@@ -249,4 +344,77 @@ nav {
   width: 50%;
   color: white;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* side nav */
+.side-nav {
+  height: 100%;
+  width: 0;
+  float: right;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  padding: 10px 30px 10px 10px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.open-slide {
+  float: right;
+  padding-top: 30px;
+  color: white;
+}
+
+.open-slide a:link {
+  color: white;
+}
+
+.open-slide a:visited {
+  color: white;
+}
+
+.open-slide a:hover {
+  color: white;
+}
+
+.open-slide a:active {
+  color: white;
+}
+
+@media (min-width: 1097px) {
+  .open-slide {
+    display: none;
+  }
+}
+
+@media (max-width: 1097px) {
+  .open-slide {
+    padding-top: 22px;
+    padding-right: 5px;
+  }
 }
