@@ -5,7 +5,7 @@ font-family: helvetica;
 background-color: #055a5b;
 /*167c80, 2c3979*/
 }
- 
+
 h1, h2, h3, p {
   margin:0;
   padding:0;
@@ -183,6 +183,7 @@ nav {
     .event-notice h2 {
        font-size: 16px;
        font-weight: bold;
+       text-align: center;
 
 
     }
@@ -191,6 +192,7 @@ nav {
       color: white;
       font-size: 16px;
       font-weight: bold;
+      text-align: center;
     }
 
     .prayer-times {
@@ -306,6 +308,22 @@ nav {
    cursor: pointer;
  }
 
+ .donate-btn-nav-side {
+   padding: 5px 7px 5px 7px;
+   background-color: #17a589;
+   color: white;
+   font-weight: 400;
+   display: block;
+   border-radius: 3px;
+   border: none;
+   /*padding: 0px 15px;*/
+   font-size: 17px;
+   font-weight: bold;
+   cursor: pointer;
+   float: right;
+   margin-bottom: 10px;
+ }
+
  .svg {
    height: 180px;
  }
@@ -399,7 +417,7 @@ nav {
 .side-nav a{
   padding: 10px 30px 10px 10px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: #ccc;
   display: block;
   transition: 0.3s;
